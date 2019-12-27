@@ -1,6 +1,6 @@
 {
     "name": "hsimp",
-    "version": "0.0.0",
+    "version": "1.0.0",
     "description": "A convenience wrapper of How Secure Is My Password?",
     "repository": "https://github.com/Richienb/hsimp.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
