@@ -29,7 +29,7 @@
         "hsimp-purescript": "^0.1.1",
         "merge-options": "^2.0.0",
         "ow": "^0.15.0",
-        "type-fest": "^0.8.1"
+        "type-fest": "^0.10.0"
     },
     "devDependencies": {
         "ava": "^2.4.0",
