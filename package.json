@@ -1,45 +1,45 @@
 {
-    "name": "hsimp",
-    "version": "1.0.1",
-    "description": "A convenience wrapper of How Secure Is My Password?",
-    "repository": "https://github.com/Richienb/hsimp.git",
-    "author": "Richie Bendall <richiebendall@gmail.com>",
-    "license": "MIT",
-    "main": "index.js",
-    "files": [
-        "index.js",
-        "index.d.ts"
-    ],
-    "engines": {
-        "node": ">=6"
-    },
-    "scripts": {
-        "lint": "xo",
-        "test": "yarn lint && ava"
-    },
-    "keywords": [
-        "password",
-        "security",
-        "predict",
-        "time",
-        "math",
-        "check"
-    ],
-    "dependencies": {
-        "@sindresorhus/is": "^2.1.0",
-        "hsimp-purescript": "^0.1.1",
-        "merge-options": "^2.0.0",
-        "type-fest": "^0.8.1"
-    },
-    "devDependencies": {
-        "ava": "^2.4.0",
-        "eslint-config-richienb": "^0.2.3",
-        "xo": "^0.25.3"
-    },
-    "resolutions": {
-        "eslint": "^6.8.0"
-    },
-    "xo": {
-        "extends": "richienb/node"
-    }
+	"name": "hsimp",
+	"version": "1.0.1",
+	"description": "A convenience wrapper of How Secure Is My Password?",
+	"repository": "https://github.com/Richienb/hsimp.git",
+	"author": "Richie Bendall <richiebendall@gmail.com>",
+	"license": "MIT",
+	"main": "index.js",
+	"files": [
+		"index.js",
+		"index.d.ts"
+	],
+	"engines": {
+		"node": ">=10"
+	},
+	"scripts": {
+		"lint": "xo",
+		"test": "yarn lint && ava"
+	},
+	"keywords": [
+		"password",
+		"security",
+		"predict",
+		"time",
+		"math",
+		"check"
+	],
+	"dependencies": {
+		"@sindresorhus/is": "^2.1.0",
+		"hsimp-purescript": "^0.1.1",
+		"merge-options": "^2.0.0",
+		"type-fest": "^0.12.0"
+	},
+	"devDependencies": {
+		"ava": "^3.5.0",
+		"eslint-config-richienb": "^0.3.0",
+		"xo": "^0.26.1"
+	},
+	"resolutions": {
+		"eslint": "^6.8.0"
+	},
+	"xo": {
+		"extends": "richienb/node"
+	}
 }
