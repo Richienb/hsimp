@@ -1,6 +1,6 @@
 "use strict"
 
-const { default: ow } = require("ow")
+const { assert } = require("@sindresorhus/is")
 const mergeOptions = require("merge-options").bind({ ignoreUndefined: true })
 const setup = require("hsimp-purescript")
 
@@ -22,9 +22,9 @@ const defaultConfig = {
     },
 }
 
-module.exports = (password, config) => {
-    ow(password, ow.string)
-    ow(config, ow.any(ow.object, ow.undefined))
+module.exports = (password, config = {}) => {
+    assert.string(password)
+    assert.plainObject(config)
 
     return setup(mergeOptions(defaultConfig, config))(password)
 }
