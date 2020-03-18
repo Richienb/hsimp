@@ -1,10 +1,10 @@
 import { PartialDeep } from "type-fest"
 
-declare namespace Hsimp {
+declare namespace hsimp {
     /**
      * A unicode character set.
     */
-    declare interface CharacterSet {
+    interface CharacterSet {
         /**
          * The name of the character set.
         */
@@ -24,12 +24,12 @@ declare namespace Hsimp {
     /**
      * Some unicode character sets.
     */
-    declare type CharacterSets = CharacterSet[]
+    type CharacterSets = CharacterSet[]
 
     /**
      * A pair of a date period (example: year) and it's duration in seconds (example: 31557600).
     */
-    declare interface Period {
+    interface Period {
         /**
          * Singular form of it's name.
         */
@@ -49,12 +49,12 @@ declare namespace Hsimp {
     /**
      * Pairs of date periods (example: year) and their durations in seconds (example: 31557600).
     */
-    declare type Periods = Period[]
+    type Periods = Period[]
 
     /**
      * A pair of a number's name (example: million) and it's numerical equivalent (example: 1000000).
     */
-    declare interface NamedNumber {
+    interface NamedNumber {
         /**
          * The name of the number.
         */
@@ -69,12 +69,12 @@ declare namespace Hsimp {
     /**
      * Pairs of number names (example: million) and their numerical equivalents (example: 1000000).
     */
-    declare type NamedNumbers = NamedNumber[]
+    type NamedNumbers = NamedNumber[]
 
     /**
      * A password pattern.
     */
-    declare interface Pattern {
+    interface Pattern {
         /**
          * The level of security offered by that pattern.
         */
@@ -94,12 +94,12 @@ declare namespace Hsimp {
     /**
      * Password patterns.
     */
-    declare type Patterns = Pattern[]
+    type Patterns = Pattern[]
 
     /**
      * A message to return based on a matching pattern.
     */
-    declare interface Message {
+    interface Message {
         /**
          * The ID of a pattern.
         */
@@ -119,14 +119,14 @@ declare namespace Hsimp {
     /**
      * Messages to return based on matching patterns.
     */
-    declare type Messages = Message[]
+    type Messages = Message[]
 
     /**
      * A dictionary of passwords which should be judged as solved "instantly".
     */
-    declare type Dictionary = string[]
+    type Dictionary = string[]
 
-    declare interface Config {
+    interface Config {
         calculation: {
             /**
              * The number of calculations per second.
@@ -180,7 +180,7 @@ declare namespace Hsimp {
     /**
      * A password security check.
     */
-    declare interface Check {
+    interface Check {
         /**
          * The name of a pattern.
         */
@@ -200,12 +200,12 @@ declare namespace Hsimp {
     /**
      * Password security checks.
     */
-    declare type Checks = Check[]
+    type Checks = Check[]
 
     /**
      * The results of the password check.
     */
-    declare interface Result {
+    interface Result {
         time: string,
         level: string,
         checks: Checks
@@ -244,6 +244,6 @@ declare namespace Hsimp {
  * }
  * ```
 */
-declare function hsimp(password: string, config?: PartialDeep<Hsimp.Config>): Hsimp.Result;
+declare function hsimp(password: string, config?: PartialDeep<hsimp.Config>): hsimp.Result
 
-export = hsimp;
+export = hsimp
