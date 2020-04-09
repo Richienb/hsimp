@@ -29,7 +29,7 @@
 		"@sindresorhus/is": "^2.1.0",
 		"hsimp-purescript": "^0.1.1",
 		"merge-options": "^2.0.0",
-		"type-fest": "^0.12.0"
+		"type-fest": "^0.13.1"
 	},
 	"devDependencies": {
 		"ava": "^3.5.0",
